@@ -2,3 +2,5 @@ node_modules
 __pycache__
 dataset
 result/*
+!result/enc
+!result/dec
