@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>motion2motion model for turning over task</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5/dist/tf.js"></script>
+        <script src="build/bundle.js"></script>
+        <script src="src/main.js"></script>
+    </head>
+    <body>
+        <h1>Motion-to-Motion Model</h1>
+        <div>
+            <canvas id="screen" width="800" height="600" style="border: solid 1px black;"></canvas>
+        </div>
+        <div>
+        <button type=button onclick="start()">
+                load
+            </button>
+            <input type="range" name="num" min="1" max="100" step="1" value="25" onchange="set_draw_speed(this.value)">
+            <span id="draw_speed">draw speed: 25 %</span>
+        </div>
+    </body>
+</html>

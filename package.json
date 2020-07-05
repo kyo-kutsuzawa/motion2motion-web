@@ -1,0 +1,25 @@
+{
+  "name": "motion2motion-web",
+  "version": "1.0.0",
+  "description": "motion2motion-web",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "browserify -r ./src/trajectory.js:trajectory -o build/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyo-kutsuzawa/motion2motion-web.git"
+  },
+  "author": "Kyo Kutsuzawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyo-kutsuzawa/motion2motion-web/issues"
+  },
+  "homepage": "https://github.com/kyo-kutsuzawa/motion2motion-web#readme",
+  "dependencies": {
+    "b-spline": "^2.0.1",
+    "browserify": "^16.5.1",
+    "http-server": "^0.12.3"
+  }
+}
