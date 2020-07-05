@@ -14,11 +14,11 @@ async function start() {
     // Load models
     if (enc == null) {
         console.log("encoder loading...")
-        enc = await tf.loadModel('../result/enc/model.json');
+        enc = await tf.loadModel('./result/enc/model.json');
     }
     if (dec == null) {
         console.log("decoder loading...")
-        dec = await tf.loadModel('../result/dec/model.json');
+        dec = await tf.loadModel('./result/dec/model.json');
     }
 
     // Generate an input traectory
