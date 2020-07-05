@@ -21,6 +21,9 @@ async function start() {
         dec = await tf.loadModel('./result/dec/model.json');
     }
 
+    // Reset decoder
+    dec.resetStates();
+
     // Generate an input traectory
     const N = 20;
     const X_in = trajectory.generate_trajectory(N);
